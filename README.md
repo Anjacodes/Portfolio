@@ -4,7 +4,8 @@ Anja Schmidt's Portfolio
 
 This is my personal portfolio website featuring all the web development projects I have realized.
 
-<img src="images/Screenshot_mobile_portfolio">
+<img width="710" alt="Screenshot_mobile_portfolio" src="https://user-images.githubusercontent.com/75140420/138000867-c3cb9ce7-f500-46c1-8509-814e714c0e4c.png">
+
 
 So far, the website consists only of the mobile version using the following languages:
 
