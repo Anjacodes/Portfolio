@@ -10,7 +10,7 @@ So far, the website consists only of the mobile version using the following lang
 
 <h2>Built With</h2>
 
-HTML
+HTML<br>
 CSS
 
 <h2>Live Demo</h2>
@@ -41,11 +41,13 @@ You can now edit the code or view it in your browser
 
 To open the project in your browser, find the project folder, right click on the html file and choose open in. Select the browser you would like to open the file with.
 
+<h3>Authors</h3>
+
 👤 Anja
 
-GitHub: <a href="https://github.com/Anjacodes" rel="noopener noreferrer">@Anjacodes</a>
-Twitter: <a href="https://twitter.com/Anja_Schmidt7" rel="noopener noreferrer">@Anja_Schmidt7</a>
-LinkedIn: <a href="https://www.linkedin.com/in/anja-schmidt7/" rel="noopener noreferrer">Anja Schmidt</a>
+GitHub: <a href="https://github.com/Anjacodes" rel="noopener noreferrer">@Anjacodes</a><br>
+Twitter: <a href="https://twitter.com/Anja_Schmidt7" rel="noopener noreferrer">@Anja_Schmidt7</a><br>
+LinkedIn: <a href="https://www.linkedin.com/in/anja-schmidt7/" rel="noopener noreferrer">Anja Schmidt</a><br>
 
 <h2>🤝 Contributing</h2>
 
