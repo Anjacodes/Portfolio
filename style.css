@@ -151,7 +151,6 @@ hr {
 
 .language_btn {
   background-color: #ebf0ee;
-  /* border: 1px solid red; */
   border-radius: 5px;
   margin: 10% 1.5% 10% 1.5%;
   padding: 4%;
@@ -182,6 +181,7 @@ hr {
   margin-bottom: 20%;
   background-image: url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
+
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
 }
@@ -224,8 +224,7 @@ hr {
 }
 
 .language_btn_skills {
-  background-color: #ffffff;
-  /* border: 1px solid red; */
+  background-color: #fff;
   border-radius: 5px;
   padding: 4%;
   font-weight: 600;
