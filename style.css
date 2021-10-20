@@ -10,14 +10,18 @@ body {
   border-radius: 5px;
 }
 
+ul {
+  padding-left: 0%;
+}
+
 /* Nav Bar */
 
-nav {
+header {
   margin-left: 7%;
   margin-right: 7%;
 }
 
-nav ul {
+header ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -35,7 +39,7 @@ li img {
 
 /* Header */
 
-header {
+#main {
   background: 50% 1% no-repeat url("images/header-illustration-mobile.svg");
   display: flex;
   align-items: center;
@@ -43,7 +47,7 @@ header {
   height: 86vh;
 }
 
-h1 {
+.heading {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -75,11 +79,11 @@ section p {
 
 /* Socials */
 
-.social_container {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.social_container a {
+.socials li {
   margin: 2%;
 }
