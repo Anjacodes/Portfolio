@@ -179,7 +179,8 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image: url("images/illustration2-aboutMe-mobile.svg"),
+  background-image: 
+    url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
