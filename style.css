@@ -99,11 +99,19 @@ section p {
 
 /* My Works */
 
-#projects {
-  margin: 7%;
+/* #myWorks {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(6, 474px);
+  grid-row-gap: 25px;
+} */
+
+#projects {
+  margin: 7%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px 474px 474px 474px 474px 474px 474px;
   grid-row-gap: 25px;
 }
 
@@ -118,6 +126,7 @@ section p {
   font-size: 24px;
   line-height: 32px;
   color: #344563;
+  text-align: center;
 }
 
 hr {
@@ -133,9 +142,6 @@ hr {
   border: 1px solid grey;
   border-radius: 5px;
   background-color: #ebf0ee;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 
 .project_card ul {
@@ -152,26 +158,19 @@ hr {
 .language_btn {
   background-color: #ebf0ee;
   border-radius: 5px;
-  margin: 10% 1.5% 10% 1.5%;
   padding: 4%;
   font-size: 11px;
-}
-
-.languages_container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .button {
   background-color: #36b37f;
   color: white;
   font-size: 17px;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   border: none;
   border-radius: 5px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .button:hover {
@@ -188,8 +187,7 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image:
-    url("images/illustration2-aboutMe-mobile.svg"),
+  background-image: url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
@@ -213,6 +211,7 @@ hr {
 /* Skills */
 
 .skill_container {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(3, 352px);
@@ -259,7 +258,33 @@ hr {
 }
 
 .languages_skills {
-  justify-content: space-evenly;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.works_card {
+  height: 100%;
+  border: 2px solid #c1c7d0;
+  border-radius: 5px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.lang_container {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+}
+
+.card_background {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7%;
 }
