@@ -174,13 +174,21 @@ hr {
   margin-top: 10%;
 }
 
+.button:hover {
+  box-shadow: 0px 8px 16px 0px #36b37f3d;
+}
+
+.button:active {
+  background-color: #008552;
+  box-shadow: none;
+}
+
 /*  About Me */
 
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image:
-    url("images/illustration2-aboutMe-mobile.svg"),
+  background-image: url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
