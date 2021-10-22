@@ -63,6 +63,14 @@ li img {
   margin: 0;
 }
 
+.heading1 {
+  color: #172b4d;
+}
+
+.heading2 {
+  color: #36b37e;
+}
+
 .header_container {
   display: flex;
   flex-direction: column;
@@ -70,14 +78,6 @@ li img {
   height: 100%;
   margin-left: 7%;
   margin-right: 7%;
-}
-
-.heading1 {
-  color: #172b4d;
-}
-
-.heading2 {
-  color: #36b37e;
 }
 
 section p {
@@ -97,13 +97,6 @@ section p {
 }
 
 /* My Works */
-
-/* #myWorks {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(6, 474px);
-  grid-row-gap: 25px;
-} */
 
 #projects {
   margin: 7%;
