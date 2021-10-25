@@ -152,6 +152,7 @@ hr {
   border-radius: 5px;
   padding: 4%;
   font-size: 11px;
+  float: left;
 }
 
 .button {
