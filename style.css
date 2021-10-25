@@ -276,6 +276,7 @@ hr {
   /* display: flex; */
   background-color: white;
   justify-content: space-around;
+  margin-left: 3px;
 }
 
 .card_background {
