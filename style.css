@@ -179,8 +179,7 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image:
-    url("images/illustration2-aboutMe-mobile.svg"),
+  background-image: url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
@@ -272,7 +271,7 @@ hr {
 
 .lang_container {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   background-color: white;
   justify-content: space-around;
 }
