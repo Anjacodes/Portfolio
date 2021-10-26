@@ -182,7 +182,8 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image: url("images/illustration2-aboutMe-mobile.svg"),
+  background-image:
+  url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
@@ -274,7 +275,6 @@ hr {
 
 .lang_container {
   width: 100%;
-  /* display: flex; */
   background-color: white;
   justify-content: space-around;
   margin-left: 3px;
@@ -295,12 +295,11 @@ hr {
 }
 
 .contact_head {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: center;
   color: #172b4d;
   margin-left: 24px;
@@ -317,12 +316,11 @@ form {
 }
 
 form > input {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
@@ -331,13 +329,11 @@ form > input {
 }
 
 form > textarea {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
   height: 114px;
-  left: 0px;
-  top: 0px;
   border-radius: 4px;
   border: 1px solid #60c095;
   color: #091e42;
@@ -373,7 +369,6 @@ form > textarea {
   width: 375px;
   left: -17px;
   top: 16808px;
-  border-radius: nullpx;
   color: #42526e;
   margin-bottom: 147px;
 }
