@@ -13,6 +13,7 @@ ul {
   width: 375px;
   border-radius: 5px;
   background-color: white;
+  margin-bottom: 0;
 }
 
 .subtext {
@@ -287,6 +288,12 @@ hr {
   padding-bottom: 10%;
 }
 
+/* Contact Form */
+
+#contact {
+  background: 100% 68% url("images/illustration-contact-form.png") no-repeat;
+}
+
 .contact_head {
   font-family: Inter;
   font-size: 40px;
@@ -298,7 +305,8 @@ hr {
   color: #172b4d;
   margin-left: 24px;
   margin-right: 24px;
-  margin-bottom: 75px
+  margin-bottom: 75px;
+  margin-top: 50px;
 }
 
 form {
@@ -319,7 +327,7 @@ form > input {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding: 10px;
-  margin-bottom: 24px
+  margin-bottom: 24px;
 }
 
 form > textarea {
@@ -334,6 +342,7 @@ form > textarea {
   border: 1px solid #60c095;
   color: #091e42;
   padding: 12px;
+  margin-bottom: 20px;
 }
 
 .btn_form {
@@ -349,9 +358,10 @@ form > textarea {
 .socials_footer {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
-.socials_footer > li > img{
+.socials_footer > li > img {
   height: 20px;
   margin-left: 15px;
   margin-top: 10px;
@@ -374,4 +384,5 @@ form > textarea {
   width: 129px;
   height: 5px;
   border: none;
+  margin-bottom: 7px;
 }
