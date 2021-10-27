@@ -4,6 +4,7 @@
 
 body {
   font-family: Inter, sans-serif;
+  margin: 0;
 }
 
 ul {
@@ -55,7 +56,7 @@ nav > ul > li > img {
   display: none;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1025px) {
   .deskt_nav {
     display: flex;
     justify-content: center;
@@ -103,7 +104,7 @@ nav > ul > li > img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: 80%;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -117,10 +118,10 @@ section p {
   text-align: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   #main {
     background: no-repeat url("images/Header-llustration-desktop.png");
-    background-size: cover;
+    background-size: contain;
   }
 
   .header_container {
@@ -160,13 +161,14 @@ section p {
   grid-row-gap: 25px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   #projects {
-    grid-template-columns: repeat(3, 369px);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: 100px 474px 474px;
     grid-column-gap: 25px;
     margin-left: 143px;
     margin-right: 143px;
+    margin-top: 0;
   }
 
   .projects_heading {
@@ -261,7 +263,7 @@ hr {
   background-repeat: no-repeat, no-repeat;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   #aboutMe {
     background-image:
       url("images/illustration-about-me-1-desktop.png"),
@@ -313,9 +315,9 @@ hr {
   justify-content: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .skill_container {
-    grid-template-columns: repeat(3, 369px);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: 352px;
     grid-column-gap: 25px;
   }
@@ -398,36 +400,6 @@ hr {
   background: 100% 68% url("images/illustration-contact-form.png") no-repeat;
 }
 
-@media screen and (min-width: 1440px) {
-  #contact {
-    background-image:
-      url("images/illustration-1-contact-form-desktop.svg"),
-      url("images/illustration-2-contact-form-desktop.png"),
-      url("images/illustration-3-contact-form-desktop.png");
-    background-position: 0 75%, 25% 75%, 100% 60%;
-    background-size: 15%, 10%, 15%;
-  }
-
-  .contact_form {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    grid-template-rows: 1fr;
-    margin-left: 135px;
-    margin-right: 135px;
-    margin-top: 75px;
-  }
-
-  .contact_head {
-    font-size: 30px !important;
-    margin: 20px 5px 0 24px !important;
-    text-align: start !important;
-  }
-
-  .btn_form {
-    align-self: start !important;
-  }
-}
-
 .contact_head {
   font-family: Inter, sans-serif;
   font-size: 40px;
@@ -497,28 +469,35 @@ form > textarea {
   flex-direction: column;
 }
 
-@media screen and (min-width: 1440px) {
-  .Contact_para {
-    display: none;
+@media screen and (min-width: 1025px) {
+  #contact {
+    background-image:
+      url("images/illustration-1-contact-form-desktop.svg"),
+      url("images/illustration-2-contact-form-desktop.png"),
+      url("images/illustration-3-contact-form-desktop.png");
+    background-position: 0 75%, 25% 75%, 100% 60%;
+    background-size: 15%, 10%, 15%;
   }
 
-  .contact_footer {
-    flex-direction: column-reverse;
+  .contact_form {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 75px;
+    width: 70%;
+    gap: 4px;
   }
 
-  .bottom_hr {
-    margin-top: 250px;
-    background-color: #dfe1e6 !important;
-    width: 100% !important;
-    height: 1px !important;
+  .contact_head {
+    font-size: 30px;
+    margin: 10px 5px 0 24px;
+    text-align: start;
   }
 
-  .socials_footer {
-    margin-top: 10px !important;
-  }
-
-  #message {
-    margin-bottom: 0;
+  .btn_form {
+    align-self: start;
   }
 }
 
@@ -547,4 +526,29 @@ form > textarea {
   height: 5px;
   border: none;
   margin-bottom: 7px;
+}
+
+@media screen and (min-width: 1025px) {
+  .Contact_para {
+    display: none;
+  }
+
+  .contact_footer {
+    flex-direction: column-reverse;
+  }
+
+  .bottom_hr {
+    margin-top: 250px;
+    background-color: #dfe1e6;
+    width: 100%;
+    height: 1px;
+  }
+
+  .socials_footer {
+    margin-top: 10px;
+  }
+
+  #message {
+    margin-bottom: 0;
+  }
 }
