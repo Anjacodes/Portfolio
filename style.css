@@ -1,19 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Inter, sans-serif;
-  display: flex;
-  justify-content: center;
-  background-color: #d5d5d5;
 }
 
 ul {
   padding-left: 0%;
 }
 
-.mobile_container {
-  width: 375px;
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 0;
+#doc_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 12px;
 }
 
 .subtext {
@@ -26,14 +28,15 @@ ul {
 /* Nav Bar */
 
 header {
-  margin-left: 7%;
-  margin-right: 7%;
+  width: 90%;
+  height: 0px;
 }
 
-header ul {
+header > nav > ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   height: 6vh;
   padding: 0;
 }
@@ -46,14 +49,35 @@ li img {
   flex: 1 1 auto;
 }
 
+.deskt_nav {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .deskt_nav {
+    display: flex;
+    justify-content: center;
+  }
+  .nav_item {
+    margin-right: 24px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #42526e;
+  }
+
+  header > nav > ul {
+    display: none;
+  }
+}
+
 /* Header */
 
 #main {
-  background: 50% 1% no-repeat url("images/header-illustration-mobile.svg");
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  background: 50% 25% no-repeat url("images/header-illustration-mobile.svg");
 }
 
 .heading {
@@ -77,8 +101,12 @@ li img {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.down_button {
+  display: none;
 }
 
 section p {
@@ -86,11 +114,30 @@ section p {
   text-align: center;
 }
 
+@media screen and (min-width: 1440px) {
+  #main {
+    background: 50% 1% no-repeat url("images/Header-llustration-desktop.svg");
+  }
+  .header_container {
+    width: 50%;
+    align-items: center;
+  }
+
+  .down_button {
+    display: block;
+  }
+}
+
 /* Header Socials */
+
+.social_container {
+  width: 100px;
+  align-self: center;
+}
 
 .socials {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .socials li {
@@ -108,6 +155,22 @@ section p {
   grid-row-gap: 25px;
 }
 
+@media screen and (min-width: 1440px) {
+  #projects {
+    grid-template-columns: repeat(3, 369px);
+    grid-template-rows: 100px 474px 474px;
+    grid-column-gap: 25px;
+    margin-left: 143px;
+    margin-right: 143px;
+  }
+  .projects_heading {
+    grid-column: 1 / span 3;
+  }
+  .divider {
+    display: none;
+  }
+}
+
 .title {
   margin-left: 7%;
   margin-right: 7%;
@@ -120,6 +183,8 @@ section p {
   line-height: 32px;
   color: #344563;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 hr {
@@ -153,8 +218,6 @@ hr {
   border-radius: 5px;
   padding: 4%;
   font-size: 11px;
-  float: left;
-  margin-left: 10px;
 }
 
 .button {
@@ -182,11 +245,22 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image:
-    url("images/illustration2-aboutMe-mobile.svg"),
+  background-image: url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
+}
+
+@media screen and (min-width: 1440px) {
+  #aboutMe {
+    background-image: url("images/illustration-about\ me-1-desktop.svg"),
+      url("images/illustration-about-me-2-desktop.svg");
+    background-position: right top, left bottom;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .intro {
@@ -199,24 +273,25 @@ hr {
 
 .button_aboutMe {
   text-align: center;
-  padding: 5% 3%;
+  padding: 12px;
   text-decoration: none;
+  height: 48px;
 }
 
 /* Skills */
 
 #skills {
   padding-bottom: 5%;
+  width: 90%;
 }
 
 .skill_container {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 327px;
   grid-template-rows: repeat(3, 352px);
   grid-row-gap: 25px;
-  margin-left: 7%;
-  margin-right: 7%;
+  justify-content: center;
 }
 
 .skills_card {
@@ -276,8 +351,8 @@ hr {
 .lang_container {
   width: 100%;
   background-color: white;
-  justify-content: space-around;
-  margin-left: 3px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card_background {
@@ -372,12 +447,8 @@ form > textarea {
 }
 
 .Contact_para {
-  height: 189px;
-  width: 375px;
-  left: -17px;
-  top: 16808px;
   color: #42526e;
-  margin-bottom: 147px;
+  margin-bottom: 300px;
 }
 
 .bottom_hr {
