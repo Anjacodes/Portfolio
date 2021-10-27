@@ -328,7 +328,9 @@ form > input {
   margin-bottom: 24px;
 }
 
-#username:hover, #useremail:hover, #message:hover {
+#username:hover,
+#useremail:hover,
+#message:hover {
   border: 1px solid rgb(8, 192, 253);
   border-radius: 0;
 }
