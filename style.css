@@ -29,7 +29,7 @@ ul {
 
 header {
   width: 90%;
-  height: 0px;
+  height: 0;
 }
 
 header > nav > ul {
@@ -60,6 +60,7 @@ nav > ul > li > img {
     display: flex;
     justify-content: center;
   }
+
   .nav_item {
     margin-right: 24px;
     font-weight: 600;
@@ -121,6 +122,7 @@ section p {
     background: no-repeat url("images/Header-llustration-desktop.png");
     background-size: cover;
   }
+
   .header_container {
     width: 50%;
     align-items: center;
@@ -166,9 +168,11 @@ section p {
     margin-left: 143px;
     margin-right: 143px;
   }
+
   .projects_heading {
     grid-column: 1 / span 3;
   }
+
   .divider {
     display: none;
   }
@@ -248,7 +252,8 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image: url("images/illustration2-aboutMe-mobile.svg"),
+  background-image:
+    url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
@@ -256,8 +261,8 @@ hr {
 
 @media screen and (min-width: 1440px) {
   #aboutMe {
-    background-image: url("images/illustration-about-me-1-desktop.png"),
-      url("images/illustration-about-me-2-desktop.png");
+    background-image:
+      url("images/illustration-about-me-1-desktop.png"),url("images/illustration-about-me-2-desktop.png");
     background-position: right top, 0% 80%;
     background-size: 17%;
     margin-top: 0;
@@ -266,6 +271,7 @@ hr {
     justify-content: center;
     height: 375px;
   }
+
   .intro {
     margin: 0;
     width: 60%;
@@ -389,10 +395,11 @@ hr {
 
 @media screen and (min-width: 1440px) {
   #contact {
-    background-image: url("images/illustration-1-contact-form-desktop.svg"),
+    background-image:
+      url("images/illustration-1-contact-form-desktop.svg"),
       url("images/illustration-2-contact-form-desktop.png"),
       url("images/illustration-3-contact-form-desktop.png");
-    background-position: 0% 75%, 25% 75%, 100% 60%;
+    background-position: 0 75%, 25% 75%, 100% 60%;
     background-size: 15%, 10%, 15%;
   }
 
@@ -410,6 +417,7 @@ hr {
     margin: 20px 5px 0px 24px !important;
     text-align: start !important;
   }
+
   .btn_form {
     align-self: start !important;
   }
@@ -488,6 +496,7 @@ form > textarea {
   .Contact_para {
     display: none;
   }
+
   .contact_footer {
     flex-direction: column-reverse;
   }
@@ -504,7 +513,7 @@ form > textarea {
   }
 
   #message {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
