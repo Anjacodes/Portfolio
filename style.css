@@ -13,6 +13,7 @@ ul {
   width: 375px;
   border-radius: 5px;
   background-color: white;
+  margin-bottom: 0;
 }
 
 .subtext {
@@ -152,6 +153,8 @@ hr {
   border-radius: 5px;
   padding: 4%;
   font-size: 11px;
+  float: left;
+  margin-left: 10px;
 }
 
 .button {
@@ -272,9 +275,9 @@ hr {
 
 .lang_container {
   width: 100%;
-  display: flex;
   background-color: white;
   justify-content: space-around;
+  margin-left: 3px;
 }
 
 .card_background {
@@ -283,4 +286,105 @@ hr {
   flex-direction: column;
   align-items: center;
   padding-bottom: 10%;
+}
+
+/* Contact Form */
+
+#contact {
+  background: 100% 68% url("images/illustration-contact-form.png") no-repeat;
+}
+
+.contact_head {
+  font-family: Inter, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 75px;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+form > input {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+#username:hover,
+#useremail:hover,
+#message:hover {
+  border: 1px solid rgb(8, 192, 253);
+  border-radius: 0;
+}
+
+form > textarea {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  height: 114px;
+  border-radius: 4px;
+  border: 1px solid #60c095;
+  color: #091e42;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.btn_form {
+  height: 48px;
+  width: 129px;
+  left: 99px;
+  top: 282px;
+  border-radius: 4px;
+  padding: 12px;
+  align-self: center;
+}
+
+.socials_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.socials_footer > li > img {
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Contact_para {
+  height: 189px;
+  width: 375px;
+  left: -17px;
+  top: 16808px;
+  color: #42526e;
+  margin-bottom: 147px;
+}
+
+.bottom_hr {
+  background-color: black;
+  border-radius: 5px;
+  width: 129px;
+  height: 5px;
+  border: none;
+  margin-bottom: 7px;
 }
