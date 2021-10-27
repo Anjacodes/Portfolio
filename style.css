@@ -192,6 +192,8 @@ section p {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 hr {
@@ -261,8 +263,9 @@ hr {
 
 @media screen and (min-width: 1440px) {
   #aboutMe {
-    background-image: 
-      url("images/illustration-about-me-1-desktop.png"),url("images/illustration-about-me-2-desktop.png");
+    background-image:
+    url("images/illustration-about-me-1-desktop.png"),
+    url("images/illustration-about-me-2-desktop.png");
     background-position: right top, 0% 80%;
     background-size: 17%;
     margin-top: 0;
@@ -326,7 +329,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 15px;
 }
 
 .language_btn_skills {
@@ -360,6 +363,8 @@ hr {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .works_card {
