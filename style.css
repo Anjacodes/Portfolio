@@ -261,7 +261,7 @@ hr {
 
 @media screen and (min-width: 1440px) {
   #aboutMe {
-    background-image:
+    background-image: 
       url("images/illustration-about-me-1-desktop.png"),url("images/illustration-about-me-2-desktop.png");
     background-position: right top, 0% 80%;
     background-size: 17%;
@@ -414,7 +414,7 @@ hr {
 
   .contact_head {
     font-size: 30px !important;
-    margin: 20px 5px 0px 24px !important;
+    margin: 20px 5px 0 24px !important;
     text-align: start !important;
   }
 
