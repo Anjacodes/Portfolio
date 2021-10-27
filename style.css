@@ -45,8 +45,10 @@ ul li {
   display: flex;
 }
 
-li img {
+nav > ul > li > img {
   flex: 1 1 auto;
+  width: 20px;
+  height: 15px;
 }
 
 .deskt_nav {
@@ -116,7 +118,8 @@ section p {
 
 @media screen and (min-width: 1440px) {
   #main {
-    background: 50% 1% no-repeat url("images/Header-llustration-desktop.svg");
+    background: no-repeat url("images/Header-llustration-desktop.png");
+    background-size: cover;
   }
   .header_container {
     width: 50%;
@@ -253,12 +256,19 @@ hr {
 
 @media screen and (min-width: 1440px) {
   #aboutMe {
-    background-image: url("images/illustration-about\ me-1-desktop.svg"),
-      url("images/illustration-about-me-2-desktop.svg");
-    background-position: right top, left bottom;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    background-image: url("images/illustration-about-me-1-desktop.png"),
+      url("images/illustration-about-me-2-desktop.png");
+    background-position: right top, 0% 80%;
+    background-size: 17%;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
+    justify-content: center;
+    height: 375px;
+  }
+  .intro {
+    margin: 0;
+    width: 60%;
     justify-content: center;
   }
 }
@@ -292,6 +302,14 @@ hr {
   grid-template-rows: repeat(3, 352px);
   grid-row-gap: 25px;
   justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .skill_container {
+    grid-template-columns: repeat(3, 369px);
+    grid-template-rows: 352px;
+    grid-column-gap: 25px;
+  }
 }
 
 .skills_card {
@@ -369,6 +387,34 @@ hr {
   background: 100% 68% url("images/illustration-contact-form.png") no-repeat;
 }
 
+@media screen and (min-width: 1440px) {
+  #contact {
+    background-image: url("images/illustration-1-contact-form-desktop.svg"),
+      url("images/illustration-2-contact-form-desktop.png"),
+      url("images/illustration-3-contact-form-desktop.png");
+    background-position: 0% 75%, 25% 75%, 100% 60%;
+    background-size: 15%, 10%, 15%;
+  }
+
+  .contact_form {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 75px;
+  }
+
+  .contact_head {
+    font-size: 30px !important;
+    margin: 20px 5px 0px 24px !important;
+    text-align: start !important;
+  }
+  .btn_form {
+    align-self: start !important;
+  }
+}
+
 .contact_head {
   font-family: Inter, sans-serif;
   font-size: 40px;
@@ -431,6 +477,35 @@ form > textarea {
   border-radius: 4px;
   padding: 12px;
   align-self: center;
+}
+
+.contact_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+  .Contact_para {
+    display: none;
+  }
+  .contact_footer {
+    flex-direction: column-reverse;
+  }
+
+  .bottom_hr {
+    margin-top: 250px;
+    background-color: #dfe1e6 !important;
+    width: 100% !important;
+    height: 1px !important;
+  }
+
+  .socials_footer {
+    margin-top: 10px !important;
+  }
+
+  #message {
+    margin-bottom: 0px;
+  }
 }
 
 .socials_footer {
