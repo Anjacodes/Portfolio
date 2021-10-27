@@ -264,8 +264,8 @@ hr {
 @media screen and (min-width: 1440px) {
   #aboutMe {
     background-image:
-    url("images/illustration-about-me-1-desktop.png"),
-    url("images/illustration-about-me-2-desktop.png");
+      url("images/illustration-about-me-1-desktop.png"),
+      url("images/illustration-about-me-2-desktop.png");
     background-position: right top, 0% 80%;
     background-size: 17%;
     margin-top: 0;
