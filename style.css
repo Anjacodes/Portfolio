@@ -430,6 +430,15 @@ form > textarea {
     color: #42526e;
   }
 
+  .nav_link {
+    background-color: white;
+    /* transition: background-color, 2s, 1s; */
+  }
+
+  .nav_item:hover {
+    background-color: red;
+  }
+
   header > nav > ul {
     display: none;
   }
