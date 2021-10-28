@@ -331,6 +331,8 @@ hr {
   margin-right: 24px;
   margin-bottom: 75px;
   margin-top: 50px;
+  transition: transform 4s 3s;
+  transform: rotate(360deg);
 }
 
 form {
@@ -381,7 +383,10 @@ form > textarea {
   border-radius: 4px;
   padding: 12px;
   align-self: center;
+  transition: transform 4s 3s;
+  transform: rotate(360deg);
 }
+
 
 .contact_footer {
   display: flex;
