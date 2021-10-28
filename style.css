@@ -1,19 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Inter, sans-serif;
-  display: flex;
-  justify-content: center;
-  background-color: #d5d5d5;
+  margin: 0;
 }
 
 ul {
   padding-left: 0%;
 }
 
-.mobile_container {
-  width: 375px;
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 0;
+.doc_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 12px;
 }
 
 .subtext {
@@ -26,14 +29,15 @@ ul {
 /* Nav Bar */
 
 header {
-  margin-left: 7%;
-  margin-right: 7%;
+  width: 90%;
+  height: 0;
 }
 
-header ul {
+header > nav > ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   height: 6vh;
   padding: 0;
 }
@@ -42,18 +46,24 @@ ul li {
   display: flex;
 }
 
-li img {
+nav > ul > li > img {
   flex: 1 1 auto;
+  width: 20px;
+  height: 15px;
+}
+
+.deskt_nav {
+  display: none;
 }
 
 /* Header */
 
 #main {
-  background: 50% 1% no-repeat url("images/header-illustration-mobile.svg");
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  background: 50% 25% no-repeat url("images/header-illustration-mobile.svg");
 }
 
 .heading {
@@ -76,9 +86,13 @@ li img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  margin-left: 7%;
-  margin-right: 7%;
+  height: 80%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.down_button {
+  display: none;
 }
 
 section p {
@@ -88,9 +102,14 @@ section p {
 
 /* Header Socials */
 
+.social_container {
+  width: 100px;
+  align-self: center;
+}
+
 .socials {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .socials li {
@@ -120,6 +139,10 @@ section p {
   line-height: 32px;
   color: #344563;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 hr {
@@ -153,8 +176,6 @@ hr {
   border-radius: 5px;
   padding: 4%;
   font-size: 11px;
-  float: left;
-  margin-left: 10px;
 }
 
 .button {
@@ -199,24 +220,25 @@ hr {
 
 .button_aboutMe {
   text-align: center;
-  padding: 5% 3%;
+  padding: 12px;
   text-decoration: none;
+  height: 48px;
 }
 
 /* Skills */
 
 #skills {
   padding-bottom: 5%;
+  width: 90%;
 }
 
 .skill_container {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 327px;
   grid-template-rows: repeat(3, 352px);
   grid-row-gap: 25px;
-  margin-left: 7%;
-  margin-right: 7%;
+  justify-content: center;
 }
 
 .skills_card {
@@ -227,7 +249,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 15px;
 }
 
 .language_btn_skills {
@@ -239,6 +261,7 @@ hr {
   line-height: 16px;
   color: #36b37e;
   margin-top: 5%;
+  margin-right: 7px;
 }
 
 .img_background {
@@ -257,10 +280,12 @@ hr {
 }
 
 .languages_skills {
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding-right: 10px;
+  padding-left: 15px;
 }
 
 .works_card {
@@ -276,8 +301,8 @@ hr {
 .lang_container {
   width: 100%;
   background-color: white;
-  justify-content: space-around;
-  margin-left: 3px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card_background {
@@ -358,6 +383,11 @@ form > textarea {
   align-self: center;
 }
 
+.contact_footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .socials_footer {
   display: flex;
   justify-content: center;
@@ -372,12 +402,8 @@ form > textarea {
 }
 
 .Contact_para {
-  height: 189px;
-  width: 375px;
-  left: -17px;
-  top: 16808px;
   color: #42526e;
-  margin-bottom: 147px;
+  margin-bottom: 300px;
 }
 
 .bottom_hr {
@@ -387,4 +413,144 @@ form > textarea {
   height: 5px;
   border: none;
   margin-bottom: 7px;
+}
+
+@media screen and (min-width: 1025px) {
+  /* Nav Bar */
+
+  .deskt_nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav_item {
+    margin-right: 24px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #42526e;
+  }
+
+  header > nav > ul {
+    display: none;
+  }
+
+  /* Header Section */
+
+  #main {
+    background: no-repeat url("images/Header-llustration-desktop.png");
+    background-size: 100%;
+  }
+
+  .header_container {
+    width: 50%;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .down_button {
+    display: block;
+  }
+
+  /* Projects Section */
+
+  #projects {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 100px 474px 474px;
+    grid-column-gap: 25px;
+    margin-left: 143px;
+    margin-right: 143px;
+    margin-top: 0;
+  }
+
+  .projects_heading {
+    grid-column: 1 / span 3;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  /* About Me Section */
+
+  #aboutMe {
+    background-image:
+      url("images/illustration-about-me-1-desktop.png"),
+      url("images/illustration-about-me-2-desktop.png");
+    background-position: right top, 0% 80%;
+    background-size: 17%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 375px;
+  }
+
+  .intro {
+    margin: 0;
+    width: 60%;
+    justify-content: center;
+  }
+
+  /* Skills Section */
+
+  .skill_container {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 352px;
+    grid-column-gap: 25px;
+  }
+
+  /* Contact Section */
+
+  #contact {
+    background-image:
+      url("images/illustration-1-contact-form-desktop.svg"),
+      url("images/illustration-2-contact-form-desktop.png"),
+      url("images/illustration-3-contact-form-desktop.png");
+    background-position: 0 75%, 25% 75%, 100% 60%;
+    background-size: 15%, 10%, 15%;
+  }
+
+  .contact_form {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 75px;
+    width: 70%;
+    gap: 4px;
+  }
+
+  .contact_head {
+    font-size: 30px;
+    margin: 10px 5px 0 24px;
+    text-align: start;
+  }
+
+  .btn_form {
+    align-self: start;
+  }
+
+  .Contact_para {
+    display: none;
+  }
+
+  .contact_footer {
+    flex-direction: column-reverse;
+  }
+
+  .bottom_hr {
+    margin-top: 250px;
+    background-color: #dfe1e6;
+    width: 100%;
+    height: 1px;
+  }
+
+  .socials_footer {
+    margin-top: 10px;
+  }
+
+  #message {
+    margin-bottom: 0;
+  }
 }

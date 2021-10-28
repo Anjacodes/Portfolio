@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="mobile_container">
+    <div class="doc_container">
       <!-- Nav Bar -->
       <header>
         <nav>
           <ul>
             <li><a href="#" rel="noopener noreferrer">Welcome</a></li>
             <li><img class="menu" src="images/menu.png" alt="Menu" /></li>
+          </ul>
+          <ul class="deskt_nav">
+            <li class="nav_item"><a>Portfolio</a></li>
+            <li class="nav_item"><a>About</a></li>
+            <li class="nav_item"><a>Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -59,13 +64,16 @@
               </li>
             </ul>
           </div>
+          <a class="down_button"
+            ><img src="images/Disabled.png" alt="scroll down button"
+          /></a>
         </section>
       </section>
 
       <!-- My Works -->
 
       <section id="projects">
-        <div>
+        <div class="projects_heading">
           <h2 class="heading title">My Recent Works</h2>
           <hr class="divider" />
         </div>
@@ -239,55 +247,59 @@
       </section>
 
       <section id="contact">
-        <h3 class="heading contact_head">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h3>
+        <div class="contact_form">
+          <h3 class="contact_head">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h3>
 
-        <form action="https://formspree.io/f/moqyzrgj" method="post">
-          <input
-            type="text"
-            id="username"
-            name="username"
-            required
-            placeholder="Full name"
-            maxlength="30"
-          />
-          <input
-            type="email"
-            id="useremail"
-            name="useremail"
-            required
-            placeholder="Email address"
-          />
-          <textarea
-            title="message"
-            id="message"
-            name="message"
-            required
-            col="10"
-            rows="5"
-            maxlength="500"
-            placeholder="Enter text here"
-          ></textarea>
-          <button
-            class="button btn_form"
-            type="submit"
-            id="submit_btn"
-            name="submit_btn"
-          >
-            Get in touch
-          </button>
-        </form>
-        <ul class="socials_footer">
-          <li><img src="images/twitter.svg" alt="Twitter Icon" /></li>
-          <li><img src="images/Linkedin-icon.svg" alt="LinkedIn Icon" /></li>
-          <li><img src="images/medium_d.png" alt="Medium Icon" /></li>
-          <li><img src="images/github.svg" alt="Github Icon" /></li>
-          <li><img src="images/union_d.png" alt="Union Icon" /></li>
-        </ul>
-        <p class="Contact_para">myemailhere@email.com</p>
-        <hr class="bottom_hr" />
+          <form action="https://formspree.io/f/moqyzrgj" method="post">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              placeholder="Full name"
+              maxlength="30"
+            />
+            <input
+              type="email"
+              id="useremail"
+              name="useremail"
+              required
+              placeholder="Email address"
+            />
+            <textarea
+              title="message"
+              id="message"
+              name="message"
+              required
+              col="10"
+              rows="5"
+              maxlength="500"
+              placeholder="Enter text here"
+            ></textarea>
+            <button
+              class="button btn_form"
+              type="submit"
+              id="submit_btn"
+              name="submit_btn"
+            >
+              Get in touch
+            </button>
+          </form>
+        </div>
+        <div class="contact_footer">
+          <ul class="socials_footer">
+            <li><img src="images/twitter.svg" alt="Twitter Icon" /></li>
+            <li><img src="images/Linkedin-icon.svg" alt="LinkedIn Icon" /></li>
+            <li><img src="images/medium_d.png" alt="Medium Icon" /></li>
+            <li><img src="images/github.svg" alt="Github Icon" /></li>
+            <li><img src="images/union_d.png" alt="Union Icon" /></li>
+          </ul>
+          <p class="Contact_para">myemailhere@email.com</p>
+          <hr class="bottom_hr" />
+        </div>
       </section>
     </div>
   </body>
