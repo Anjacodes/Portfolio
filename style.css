@@ -428,6 +428,13 @@ form > textarea {
     font-weight: 600;
     font-size: 15px;
     color: #42526e;
+    transition-property: color;
+    transition-duration: 4s;
+    transition-delay: 2s;
+  }
+
+  .nav_item:hover {
+    color: red;
   }
 
   .nav_link {
