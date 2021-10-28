@@ -387,7 +387,6 @@ form > textarea {
   transform: rotate(360deg);
 }
 
-
 .contact_footer {
   display: flex;
   flex-direction: column;
@@ -432,7 +431,6 @@ form > textarea {
     margin-right: 24px;
     font-weight: 600;
     font-size: 15px;
-    color: #42526e;
     transition-property: color;
     transition-duration: 4s;
     transition-delay: 2s;
@@ -442,17 +440,20 @@ form > textarea {
     color: red;
   }
 
-  .nav_link {
-    background-color: white;
-    /* transition: background-color, 2s, 1s; */
-  }
-
-  .nav_item:hover {
-    background-color: red;
-  }
-
   header > nav > ul {
     display: none;
+  }
+
+  nav > ul > li > a {
+    text-decoration: none;
+    color: #42526e;
+    transition-property: color;
+    transition-duration: 5s;
+    transition-delay: 1s;
+  }
+
+  nav > ul > li > a:hover {
+    color:red;
   }
 
   /* Header Section */
