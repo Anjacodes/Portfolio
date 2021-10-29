@@ -15,7 +15,7 @@ CSS
 
 <h2>Live Demo</h2>
 
-<a href="http://127.0.0.1:5500/" rel="noopener noreferrer">Live Demo Link</a>
+<a href="https://anjacodes.github.io/Portfolio/" rel="noopener noreferrer">Live Demo Link</a>
 
 <h2>Getting Started</h2>
 
