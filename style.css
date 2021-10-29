@@ -203,8 +203,7 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image:
-    url("images/illustration2-aboutMe-mobile.svg"),
+  background-image: url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration2-aboutMe-mobile.svg");
   background-position: left bottom, right top;
   background-repeat: no-repeat, no-repeat;
@@ -331,7 +330,8 @@ hr {
   margin-right: 24px;
   margin-bottom: 75px;
   margin-top: 50px;
-  transition: transform 4s 3s;
+  z-index: 1000;
+  transition: transform 4s;
   transform: rotate(360deg);
 }
 
@@ -427,33 +427,27 @@ form > textarea {
     justify-content: center;
   }
 
-  .nav_item {
-    margin-right: 24px;
-    font-weight: 600;
-    font-size: 15px;
-    transition-property: color;
-    transition-duration: 4s;
-    transition-delay: 2s;
-  }
-
-  .nav_item:hover {
-    color: red;
-  }
-
-  header > nav > ul {
+  .mobile_nav {
     display: none;
   }
 
-  nav > ul > li > a {
+  .nav_link {
+    margin-right: 24px;
+    font-weight: 600;
+    font-size: 15px;
     text-decoration: none;
     color: #42526e;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 1000;
     transition-property: color;
-    transition-duration: 5s;
-    transition-delay: 1s;
+    transition-duration: 2s;
   }
 
-  nav > ul > li > a:hover {
-    color: red;
+  .nav_link:hover {
+    color: #60c095;
   }
 
   /* Header Section */
@@ -495,8 +489,7 @@ form > textarea {
   /* About Me Section */
 
   #aboutMe {
-    background-image:
-      url("images/illustration-about-me-1-desktop.png"),
+    background-image: url("images/illustration-about-me-1-desktop.png"),
       url("images/illustration-about-me-2-desktop.png");
     background-position: right top, 0% 80%;
     background-size: 17%;
@@ -524,8 +517,7 @@ form > textarea {
   /* Contact Section */
 
   #contact {
-    background-image:
-      url("images/illustration-1-contact-form-desktop.svg"),
+    background-image: url("images/illustration-1-contact-form-desktop.svg"),
       url("images/illustration-2-contact-form-desktop.png"),
       url("images/illustration-3-contact-form-desktop.png");
     background-position: 0 75%, 25% 75%, 100% 60%;
