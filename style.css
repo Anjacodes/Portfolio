@@ -222,7 +222,7 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image: 
+  background-image:
     url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration-1-about-me-mobile.png");
   background-position: left bottom, 100% -11%;
@@ -513,7 +513,7 @@ form > textarea {
   /* About Me Section */
 
   #aboutMe {
-    background-image: 
+    background-image:
       url("images/illustration-about-me-1-desktop.png"),
       url("images/illustration-about-me-2-desktop.png");
     background-position: right top, 0% 80%;
