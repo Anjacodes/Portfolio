@@ -11,6 +11,10 @@ ul {
   padding-left: 0%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .doc_container {
   display: flex;
   flex-direction: column;
@@ -23,7 +27,7 @@ ul {
   color: #42526e;
   font-size: 20px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 32px;
 }
 
 /* Nav Bar */
@@ -46,6 +50,17 @@ ul li {
   display: flex;
 }
 
+nav > ul > li > a {
+  color: #28352f;
+  transition-property: color, font-size;
+  transition-duration: 2s;
+}
+
+nav > ul > li > a:hover {
+  color: #60c095;
+  font-size: 20px;
+}
+
 nav > ul > li > img {
   flex: 1 1 auto;
   width: 20px;
@@ -62,8 +77,12 @@ nav > ul > li > img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 80vh;
   background: 50% 25% no-repeat url("images/header-illustration-mobile.svg");
+  background-size: cover;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .heading {
@@ -204,8 +223,8 @@ hr {
   margin-top: 20%;
   margin-bottom: 20%;
   background-image: url("images/illustration2-aboutMe-mobile.svg"),
-    url("images/illustration2-aboutMe-mobile.svg");
-  background-position: left bottom, right top;
+    url("images/illustration-1-about-me-mobile.png");
+  background-position: left bottom, 100% -11%;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -419,6 +438,8 @@ form > textarea {
   margin-bottom: 7px;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 1025px) {
   /* Nav Bar */
 
@@ -442,12 +463,13 @@ form > textarea {
     border-radius: 10px;
     background-color: white;
     z-index: 1000;
-    transition-property: color;
+    transition-property: color, font-size;
     transition-duration: 2s;
   }
 
   .nav_link:hover {
     color: #60c095;
+    font-size: 20px;
   }
 
   /* Header Section */
@@ -455,6 +477,7 @@ form > textarea {
   #main {
     background: no-repeat url("images/Header-llustration-desktop.png");
     background-size: 100%;
+    margin-top: 0;
   }
 
   .header_container {
