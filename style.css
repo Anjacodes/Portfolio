@@ -57,7 +57,7 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-  color: #60c095;
+  color: #008552;
   font-size: 20px;
 }
 
@@ -222,7 +222,8 @@ hr {
 #aboutMe {
   margin-top: 20%;
   margin-bottom: 20%;
-  background-image: url("images/illustration2-aboutMe-mobile.svg"),
+  background-image:
+    url("images/illustration2-aboutMe-mobile.svg"),
     url("images/illustration-1-about-me-mobile.png");
   background-position: left bottom, 100% -11%;
   background-repeat: no-repeat, no-repeat;
@@ -512,7 +513,8 @@ form > textarea {
   /* About Me Section */
 
   #aboutMe {
-    background-image: url("images/illustration-about-me-1-desktop.png"),
+    background-image:
+      url("images/illustration-about-me-1-desktop.png"),
       url("images/illustration-about-me-2-desktop.png");
     background-position: right top, 0% 80%;
     background-size: 17%;
@@ -540,7 +542,8 @@ form > textarea {
   /* Contact Section */
 
   #contact {
-    background-image: url("images/illustration-1-contact-form-desktop.svg"),
+    background-image:
+      url("images/illustration-1-contact-form-desktop.svg"),
       url("images/illustration-2-contact-form-desktop.png"),
       url("images/illustration-3-contact-form-desktop.png");
     background-position: 0 75%, 25% 75%, 100% 60%;
