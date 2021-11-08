@@ -41,10 +41,12 @@ a {
   float: right;
 }
 
-.mobMenu > ul > li {
+.mobMenu > ul > li > a{
   font-size: 32px;
   line-height: 44px;
   margin-top: 25px;
+  text-decoration: none;
+  color: #3a4a42;
 }
 
 /* Nav Bar */
