@@ -7,12 +7,12 @@ console.log(bodyEl);
 
 hamMenu[0].addEventListener('click', () => {
   mobileMenu[0].style.display = 'block';
-  bodyEl.style.overflow = 'hidden'; 
+  bodyEl.style.overflow = 'hidden';
 });
 
 closeMobMenu.addEventListener('click', () => {
   mobileMenu[0].style.display = 'none';
-  bodyEl.style.overflow = 'auto'; 
+  bodyEl.style.overflow = 'auto';
 });
 
 for (const i of mobLinks) {
