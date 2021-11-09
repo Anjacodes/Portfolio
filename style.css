@@ -30,6 +30,43 @@ a {
   line-height: 32px;
 }
 
+nav > ul > li > a {
+  color: #28352f;
+  transition-property: color, font-size;
+  transition-duration: 2s;
+}
+
+nav > ul > li > a > img {
+  flex: 1 1 auto;
+  width: 20px;
+  height: 15px;
+}
+
+/* Mobile Menu */
+
+.mobMenu {
+  height: 100vh;
+  padding: 25px;
+  display: none;
+}
+
+.mobMenu > a > img {
+  float: right;
+}
+
+.mobMenu > ul > li > a {
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+nav > ul > li > a:hover {
+  color: #008552;
+  font-size: 20px;
+}
+
 /* Nav Bar */
 
 header {
@@ -48,23 +85,6 @@ header > nav > ul {
 
 ul li {
   display: flex;
-}
-
-nav > ul > li > a {
-  color: #28352f;
-  transition-property: color, font-size;
-  transition-duration: 2s;
-}
-
-nav > ul > li > a:hover {
-  color: #008552;
-  font-size: 20px;
-}
-
-nav > ul > li > img {
-  flex: 1 1 auto;
-  width: 20px;
-  height: 15px;
 }
 
 .deskt_nav {
