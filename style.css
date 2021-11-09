@@ -180,8 +180,18 @@ section p {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  margin-top: 60px;
   margin-bottom: 10px;
+}
+
+.card_subheading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #344563;
+  margin-top: -10px;
 }
 
 hr {
@@ -235,6 +245,11 @@ hr {
 .button:active {
   background-color: #008552;
   box-shadow: none;
+}
+
+.card_image {
+  height: 170px;
+  width: 100%;
 }
 
 /*  About Me */
