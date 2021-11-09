@@ -2,11 +2,19 @@ const hamMenu = document.getElementsByClassName('menu');
 const mobileMenu = document.getElementsByClassName('mobMenu');
 const closeMobMenu = document.getElementById('closeMenu');
 const mobLinks = document.querySelectorAll('.mobMenu > ul > li > a');
+const bodyEl = document.querySelector('body');
+console.log(bodyEl);
 
-hamMenu[0].addEventListener('click', selectHamMenu = () => mobileMenu[0].style.display = 'block');
+hamMenu[0].addEventListener('click', () => { mobileMenu[0].style.display = 'block';
+bodyEl.style.overflow = 'hidden'; 
+});
 
-closeMobMenu.addEventListener('click', selectCloseBtn = () => mobileMenu[0].style.display = 'none');
+closeMobMenu.addEventListener('click', () => { mobileMenu[0].style.display = 'none';
+bodyEl.style.overflow = 'auto'; 
+});
 
 for (const i of mobLinks) {
-  i.addEventListener('click', selectMenuEl = () => mobileMenu[0].style.display = 'none');
+  i.addEventListener('click', () => { mobileMenu[0].style.display = 'none';
+  bodyEl.style.overflow = 'auto';
+});
 }
