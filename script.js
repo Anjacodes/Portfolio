@@ -3,16 +3,12 @@ const mobileMenu = document.getElementsByClassName('mobMenu');
 const closeMobMenu = document.getElementById('closeMenu');
 const mobLinks = document.querySelectorAll('.mobMenu > ul > li > a');
 
-hamMenu[0].addEventListener('click', function selectHamMenu() {
-  mobileMenu[0].style.display = 'block';
-});
+hamMenu[0].addEventListener('click', selectHamMenu = () =>
+  mobileMenu[0].style.display = 'block');
 
-closeMobMenu.addEventListener('click', function selectCloseBtn() {
-  mobileMenu[0].style.display = 'none';
-});
+closeMobMenu.addEventListener('click', selectCloseBtn = () => mobileMenu[0].style.display = 'none');
 
 for (const i of mobLinks) {
-  i.addEventListener('click', function selectMenuEl() {
-    mobileMenu[0].style.display = 'none';
-  });
+  i.addEventListener('click', selectMenuEl = () =>
+    mobileMenu[0].style.display = 'none');
 }
