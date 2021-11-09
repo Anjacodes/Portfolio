@@ -15,9 +15,9 @@ closeMobMenu.addEventListener('click', () => {
   bodyEl.style.overflow = 'auto';
 });
 
-mobLinks.forEach(i => {
+mobLinks.forEach((i) => {
   i.addEventListener('click', () => {
     mobileMenu[0].style.display = 'none';
     bodyEl.style.overflow = 'auto';
-  })
+  });
 });
