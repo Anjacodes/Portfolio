@@ -1,3 +1,4 @@
 #ignoring automatically generated Store file
 
 .DS_Store
+node_modules
