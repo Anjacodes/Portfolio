@@ -720,6 +720,7 @@ form > textarea {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  overflow: clip;
 }
 
 .project_description {
@@ -730,6 +731,10 @@ form > textarea {
   line-height: 30px;
   color: #344563;
   text-align: justify;
+}
+
+.deskBtn-container {
+  display: none;
 }
 
 @media only screen and (max-width: 480px) {
@@ -748,7 +753,20 @@ form > textarea {
   }
 
   .project_btn{
-    order: 4;
+    display: none;
+  }
+/*
+  .heading_cont > a {
+    display: none;
+  }
+*/
+  .deskBtn-container {
+    display: flex;
+    order: 3;
+  }
+
+  .deskBtn-container > .project_btn {
+    display: inline-block;
   }
 
   .modal_lang_container {

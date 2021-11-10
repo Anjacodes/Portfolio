@@ -146,6 +146,10 @@ function modal_window_template (index) {
       <li class="modal_language_btn">'+index.project_tech[5]+'</li> \
     </ul> \
     <p class="project_description">'+index.description+'</p> \
+    <div class="deskBtn-container"> \
+      <a class="project_btn" href='+index.linkLive+' target="_blank">See Live<span class="btn_span"><img src="images/live_icon.png"></span></a> \
+      <a class="project_btn" href='+index.linkSource+' target="_blank">See Source<span class="btn_span"><img src="images/github_icon.png"></span></a> \
+    </div> \
   </div>';
 }
 
@@ -164,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
   open_modal.forEach((btn, i) => {
     btn.addEventListener('click', () => {
       console.log(projects[i], i);
+      bodyEl.style.overflow = 'hidden';
       let modalContent = document.createDocumentFragment();
       let newCont = document.createElement('div');
       newCont.className = 'modal_window_container';
