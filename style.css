@@ -427,6 +427,11 @@ form > textarea {
   transform: rotate(360deg);
 }
 
+.errorMsg {
+  color: red;
+  font-size: 12px;
+}
+
 .contact_footer {
   display: flex;
   flex-direction: column;
