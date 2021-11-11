@@ -173,7 +173,29 @@ function modalWindowTemplate(index) {
   </div>`;
 }
 
+const person = {
+  "name": '',
+  "email": '',
+  "message": ''
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+  person.name = JSON.parse(localStorage.getItem('name'));
+  person.email = JSON.parse(localStorage.getItem('email'));
+  person.message = JSON.parse(localStorage.getItem('message'));
+
+  for (const key in person) {
+    if (key === 'name' && person[key] !== '') {
+      userName.value = person[key];
+    }
+    if (key === 'email' && person[key] !== '') {
+      emailForm.value = person[key];
+    }
+    if (key === 'message' && person[key] !== '') {
+      message.value = person[key];
+    }
+  }
+
   projects.forEach((element) => {
     const dinContent = document.createDocumentFragment();
     const newDiv = document.createElement('div');
@@ -208,35 +230,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-// Create User Object
-const person = {
-  "name": '',
-  "email": '',
-  "message": '',
-};
-
 // Saving User Data Into Local Storage
 userName.addEventListener('input', () => {
-  if (userName.value !== '') {
-    person.name = userName.value;
-    localStorage.setItem('user', JSON.stringify(person.name));
-    console.log(person, localStorage);
-  }
+  person.name = userName.value;
+  localStorage.setItem('name', JSON.stringify(person.name));
 });
 
 emailForm.addEventListener('input',() => {
-  if (emailForm.value !== '') {
-    person.email = emailForm.value;
-    localStorage.setItem('email', JSON.stringify(person.email));
-    console.log(person, localStorage);
-  }
+  person.email = emailForm.value;
+  localStorage.setItem('email', JSON.stringify(person.email));
 });
 
 message.addEventListener('input', () => {
-  if (message.value !== '') {
-    person.message = message.value;
-    localStorage.setItem('message', JSON.stringify(person.message));
-    console.log(person, localStorage);
-  }
+  person.message = message.value;
+  localStorage.setItem('message', JSON.stringify(person.message));
 })
 });
