@@ -1,11 +1,17 @@
+// MObile Menu
 const hamMenu = document.getElementsByClassName('menu');
 const mobileMenu = document.getElementsByClassName('mobMenu');
 const closeMobMenu = document.getElementById('closeMenu');
 const mobLinks = document.querySelectorAll('.mobMenu > ul > li > a');
 const bodyEl = document.querySelector('body');
+
+// Form Selectors
 const formEl = document.getElementById('contactForm');
 const emailMsg = formEl.querySelector('small');
 const emailForm = formEl.querySelector('input[type="email"]');
+const userName = formEl.querySelector('input[name="username"');
+const message = formEl.querySelector('textarea');
+
 
 function hasUpperCase(str) {
   const regExp = /[A-Z]/;
@@ -201,4 +207,36 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+// Create User Object
+const person = {
+  "name": '',
+  "email": '',
+  "message": '',
+};
+
+// Saving User Data Into Local Storage
+userName.addEventListener('input', () => {
+  if (userName.value !== '') {
+    person.name = userName.value;
+    localStorage.setItem('user', JSON.stringify(person.name));
+    console.log(person, localStorage);
+  }
+});
+
+emailForm.addEventListener('input',() => {
+  if (emailForm.value !== '') {
+    person.email = emailForm.value;
+    localStorage.setItem('email', JSON.stringify(person.email));
+    console.log(person, localStorage);
+  }
+});
+
+message.addEventListener('input', () => {
+  if (message.value !== '') {
+    person.message = message.value;
+    localStorage.setItem('message', JSON.stringify(person.message));
+    console.log(person, localStorage);
+  }
+})
 });
