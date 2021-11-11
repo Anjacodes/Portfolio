@@ -456,6 +456,16 @@ form > textarea {
   transform: rotate(360deg);
 }
 
+.errorMsg {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #eb6383;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
 .contact_footer {
   display: flex;
   flex-direction: column;

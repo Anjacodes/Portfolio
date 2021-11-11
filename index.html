@@ -204,7 +204,7 @@
             like to chat please get in touch.
           </h3>
 
-          <form action="https://formspree.io/f/moqyzrgj" method="post">
+          <form id="contactForm" action="https://formspree.io/f/moqyzrgj" method="post">
             <input
               type="text"
               id="username"
@@ -229,6 +229,7 @@
               maxlength="500"
               placeholder="Enter text here"
             ></textarea>
+            <small id="emailMsg" class="errorMsg"></small>
             <button
               class="button btn_form"
               type="submit"
