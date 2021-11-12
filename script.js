@@ -14,7 +14,7 @@ const message = formEl.querySelector('textarea');
 
 
 function hasUpperCase(str) {
-  const regExp = /[A-Z]/;
+  const regExp = /[a-z]/;
   return regExp.test(str);
 }
 
@@ -46,7 +46,7 @@ mobLinks.forEach((i) => {
 });
 
 const content01 = {
-  name: 'Multi-Post Stories',
+  names: 'Multi-Post Stories',
   title: 'Keeping track of hundreds of components',
   subheading: 'Gain+Glory',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -68,7 +68,7 @@ const content02 = {
   project_tech: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
   linkLive: '',
   linkSource: '',
-  image: 'images/Img_placeholder.png',
+  imge: 'images/Img_placeholder.png',
   closeBtn: 'images/close_modal.png',
   cover: 'images/snapshot_portfolio.png',
 };
@@ -84,7 +84,7 @@ const content03 = {
   linkSource: '',
   image: 'images/Img_placeholder.png',
   closeBtn: 'images/close_modal.png',
-  cover: 'images/snapshot_portfolio.png',
+  Cover: 'images/snapshot_portfolio.png',
 };
 
 const content04 = {
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('modal_background').classList.add('modal_active');
 
       // Add Event Listener To Close Modal Button
-      const closeBtn = document.querySelectorAll('.close_btn');
+      const closeBtn = document.querySelectorAll('close_btn');
       closeBtn.forEach((btn) => {
         btn.addEventListener('click', () => {
           document.getElementById('modal_background').classList.remove('modal_active');
@@ -243,6 +243,6 @@ emailForm.addEventListener('input',() => {
 
 message.addEventListener('input', () => {
   person.message = message.value;
-  localStorage.setItem('message', JSON.stringify(person.message));
+  localStorage.setItem('message', JSON.stringify(message));
 })
 });
