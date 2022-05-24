@@ -461,8 +461,13 @@ form > textarea {
 }
 
 .errorMsg {
-  color: red;
-  font-size: 12px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #eb6383;
+  font-weight: bold;
+  margin-top: 12px;
 }
 
 .contact_footer {
