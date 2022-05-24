@@ -8,9 +8,17 @@ const bodyEl = document.querySelector('body');
 // Form Selectors
 const formEl = document.getElementById('contactForm');
 const emailMsg = formEl.querySelector('small');
-const emailForm = formEl.querySelector('input[type="email"]');
+const emailForm = formEl.querySelector('input[type="email"]')
 const userName = formEl.querySelector('input[name="username"');
 const message = formEl.querySelector('textarea');
+
+// Scroll Down Button
+const scrollButton = document.getElementsByClassName('down_button');
+const projectSection = document.getElementById('projects');
+
+scrollButton[0].addEventListener('click', () => {
+  projectSection.scrollIntoView(top);
+})
 
 
 function hasUpperCase(str) {
@@ -20,9 +28,6 @@ function hasUpperCase(str) {
 
 formEl.addEventListener('submit', (e) => {
   if (hasUpperCase(emailForm.value)) {
-    e.preventDefault();
-    emailMsg.style.display = 'block';
-    emailMsg.textContent = 'Email needs to be lowercase';
   } else {
     emailMsg.style.display = 'none';
   }
@@ -46,87 +51,87 @@ mobLinks.forEach((i) => {
 });
 
 const content01 = {
-  names: 'Multi-Post Stories',
-  title: 'Keeping track of hundreds of components',
-  subheading: 'Gain+Glory',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-  project_tech: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  linkLive: 'https://anjacodes.github.io/Portfolio/',
-  linkSource: 'https://github.com/Anjacodes/Portfolio',
-  image: 'images/Img_placeholder.png',
+  name: 'Hotelzilla',
+  title: 'Your next holiday is judst one click away!',
+  subheading: 'Reservation Platform',
+  description: "This web application is a hotel reservation app which allows users to see all featured hotel rooms from the app's own external API, see a detailed view of each room, sign up and sign in. If the user is logged in they can reserve a room, and see a list of all their reservations. If the user is an admin they can additionally add or delete hotel rooms.",
+  technologies: ['React', 'Redux', 'Tailwind'],
+  project_tech: ['React', 'Redux', 'Tailwind'],
+  linkLive: 'https://hotelzilla.netlify.app/',
+  linkSource: 'https://github.com/Anjacodes/Hotelzilla-UI',
+  image: 'images/projectViews/Hotelzilla-logo.png',
   closeBtn: 'images/close_modal.png',
-  cover: 'images/snapshot_portfolio.png',
+  cover: 'images/projectViews/Index_desktop.png',
 };
 
 const content02 = {
-  name: 'Multi-Post Stories',
-  title: 'Keeping track of hundreds of components',
-  subheading: 'Gain+Glory',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-  project_tech: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  linkLive: '',
-  linkSource: '',
-  imge: 'images/Img_placeholder.png',
+  name: 'Budgetify',
+  title: 'Helps you stay on top of your finances',
+  subheading: 'The Budgeting App',
+  description: 'This mobile app allows the user to manage their personal finances by keeping track of their expenses.',
+  technologies: ['Ruby on Rails', 'Tailwind', 'PostgreSQL'],
+  project_tech: ['Ruby on Rails', 'Tailwind', 'PostgreSQL'],
+  linkLive: 'https://boiling-falls-90821.herokuapp.com/users/sign_in',
+  linkSource: 'https://github.com/Anjacodes/Budget_App',
+  image: 'images/projectViews/Budgetify-logo.png',
   closeBtn: 'images/close_modal.png',
-  cover: 'images/snapshot_portfolio.png',
+  cover: 'images/projectViews/Budgetify_index.png',
 };
 
 const content03 = {
-  name: 'Multi-Post Stories',
-  title: 'Keeping track of hundreds of components',
-  subheading: 'Gain+Glory',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-  project_tech: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  linkLive: '',
-  linkSource: '',
-  image: 'images/Img_placeholder.png',
+  name: 'Ultimate Show Guide',
+  title: 'Keep track of all your favorite TV shows',
+  subheading: "The Hottest Stuff on TV",
+  description: 'This web app will help you to manage, like, and comment all your favourite TV series in one place.',
+  technologies: ['JavaScript', 'Webpack', 'Tailwind'],
+  project_tech: ['JavaScript', 'Webpack', 'Tailwind'],
+  linkLive: 'https://williamrolando88.github.io/ultimate-show-guide/',
+  linkSource: 'https://github.com/williamrolando88/ultimate-show-guide',
+  image: 'images/projectViews/DummyLogoTV.png',
   closeBtn: 'images/close_modal.png',
-  Cover: 'images/snapshot_portfolio.png',
+  cover: 'images/projectViews/USC_homeScreenshot.png',
 };
 
 const content04 = {
-  name: 'Multi-Post Stories',
-  title: 'Keeping track of hundreds of components',
-  subheading: 'Gain+Glory',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-  project_tech: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  linkLive: '',
-  linkSource: '',
-  image: 'images/Img_placeholder.png',
+  name: 'Math Magicians',
+  title: "Let's do some maths magic!",
+  subheading: 'Free Online Calculator',
+  description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.',
+  technologies: ['JavScript', 'React', 'CSS'],
+  project_tech: ['JavScript', 'React', 'CSS'],
+  linkLive: 'https://vigilant-kowalevski-cde2c6.netlify.app/calculator',
+  linkSource: 'https://github.com/Anjacodes/math-magicians',
+  image: 'images/projectViews/MathMagicians-logo.png',
   closeBtn: 'images/close_modal.png',
-  cover: 'images/snapshot_portfolio.png',
+  cover: 'images/projectViews/MathMathematicians_Index.png',
 };
 
 const content05 = {
-  name: 'Multi-Post Stories',
-  title: 'Keeping track of hundreds of components',
-  subheading: 'Gain+Glory',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-  project_tech: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+  name: 'Yummy Recipes',
+  title: 'Find and Create New Recipes',
+  subheading: 'Recipe Collection',
+  description: 'This website allows users to add recipes, edit and delete their own recipes, see a list of all public recipes, see a list of all available foods and create new food items, add ingredients to their recipes, generate a shopping list with the missing food for all their recipes',
+  technologies: ['Ruby on Rails', 'PostgreSQL', 'Tailwind'],
+  project_tech: ['Ruby on Rails', 'PostgreSQL', 'Tailwind'],
   linkLive: '',
-  linkSource: '',
-  image: 'images/Img_placeholder.png',
+  linkSource: 'https://github.com/Omar-Muhamad/Yummy-Recipe-RoR',
+  image: 'images/projectViews/YummyRecipes-logo.png',
   closeBtn: 'images/close_modal.png',
-  cover: 'images/snapshot_portfolio.png',
+  cover: 'images/projectViews/YummyRecipe-index.png',
 };
 
 const content06 = {
-  name: 'Multi-Post Stories',
-  title: 'Keeping track of hundreds of components',
-  subheading: 'Gain+Glory',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['ruby on rails', 'css', 'JavScript', 'html'],
-  project_tech: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  linkLive: '',
-  linkSource: '',
-  image: 'images/Img_placeholder.png',
+  name: 'Bookstore',
+  title: 'Keeping track of your favorite books!',
+  subheading: 'Personal Online Library',
+  description: 'The Bookstore web application allows users to display a list of books, keep track of the progress in each book, add a new book, and remove a selected book.',
+  technologies: ['React', 'Redux', 'CSS'],
+  project_tech: ['React', 'Redux', 'CSS'],
+  linkLive: 'https://affectionate-mirzakhani-76e566.netlify.app/',
+  linkSource: 'https://github.com/Anjacodes/Bookstore',
+  image: 'images/projectViews/Bookstore_logo.png',
   closeBtn: 'images/close_modal.png',
-  cover: 'images/snapshot_portfolio.png',
+  cover: 'images/projectViews/Bookstore_index.png',
 };
 
 const projects = [content01, content02, content03, content04, content05, content06];
@@ -141,7 +146,6 @@ function htmlWorksTemplate(index) {
       <li class="language_btn">${index.technologies[0]}</li>
       <li class="language_btn">${index.technologies[1]}</li>
       <li class="language_btn">${index.technologies[2]}</li>
-      <li class="language_btn">${index.technologies[3]}</li>
     </ul>
     <a class="button button_modal">See Project</a>
   </div>`;
@@ -161,9 +165,6 @@ function modalWindowTemplate(index) {
       <li class="modal_language_btn">${index.project_tech[0]}</li> \
       <li class="modal_language_btn">${index.project_tech[1]}</li> \
       <li class="modal_language_btn">${index.project_tech[2]}</li> \
-      <li class="modal_language_btn">${index.project_tech[3]}</li> \
-      <li class="modal_language_btn">${index.project_tech[4]}</li> \
-      <li class="modal_language_btn">${index.project_tech[5]}</li> \
     </ul> \
     <p class="project_description">${index.description}</p> \
     <div class="deskBtn-container"> \
@@ -219,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('modal_background').classList.add('modal_active');
 
       // Add Event Listener To Close Modal Button
-      const closeBtn = document.querySelectorAll('close_btn');
+      const closeBtn = document.querySelectorAll('.close_btn');
       closeBtn.forEach((btn) => {
         btn.addEventListener('click', () => {
           document.getElementById('modal_background').classList.remove('modal_active');
@@ -237,7 +238,7 @@ userName.addEventListener('input', () => {
 });
 
 emailForm.addEventListener('input',() => {
-  person.email = emailForm.value;
+  person.email = emailForm.value.toLowercase();
   localStorage.setItem('email', JSON.stringify(person.email));
 });
 
