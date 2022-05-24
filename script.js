@@ -20,7 +20,6 @@ scrollButton[0].addEventListener('click', () => {
   projectSection.scrollIntoView(top);
 })
 
-
 function hasUpperCase(str) {
   const regExp = /[a-z]/;
   return regExp.test(str);
@@ -175,9 +174,9 @@ function modalWindowTemplate(index) {
 }
 
 const person = {
-  "name": '',
-  "email": '',
-  "message": ''
+  name: '',
+  email: '',
+  message: '',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -185,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
   person.email = JSON.parse(localStorage.getItem('email'));
   person.message = JSON.parse(localStorage.getItem('message'));
 
-  for (const key in person) {
+  Object.keys(person).forEach((key) => {
     if (key === 'name' && person[key] !== '') {
       userName.value = person[key];
     }
@@ -195,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (key === 'message' && person[key] !== '') {
       message.value = person[key];
     }
-  }
+  });
 
   projects.forEach((element) => {
     const dinContent = document.createDocumentFragment();
@@ -231,19 +230,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-// Saving User Data Into Local Storage
-userName.addEventListener('input', () => {
-  person.name = userName.value;
-  localStorage.setItem('name', JSON.stringify(person.name));
-});
+  // Saving User Data Into Local Storage
+  userName.addEventListener('input', () => {
+    person.name = userName.value;
+    localStorage.setItem('name', JSON.stringify(person.name));
+  });
 
-emailForm.addEventListener('input',() => {
-  person.email = emailForm.value.toLowercase();
-  localStorage.setItem('email', JSON.stringify(person.email));
-});
-
-message.addEventListener('input', () => {
-  person.message = message.value;
-  localStorage.setItem('message', JSON.stringify(message));
-})
+  emailForm.addEventListener('input', () => {
+    person.email = emailForm.value;
+    localStorage.setItem('email', JSON.stringify(person.email));
+  });
+  message.addEventListener('input', () => {
+    person.message = message.value;
+    localStorage.setItem('message', JSON.stringify(person.message));
+  });
 });
