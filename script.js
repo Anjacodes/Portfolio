@@ -20,7 +20,6 @@ scrollButton[0].addEventListener('click', () => {
   projectSection.scrollIntoView(top);
 })
 
-
 function hasUpperCase(str) {
   const regExp = /[a-z]/;
   return regExp.test(str);
