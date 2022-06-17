@@ -295,6 +295,20 @@ hr {
   padding: 12px;
   text-decoration: none;
   height: 48px;
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-20 {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.text-justify {
+  text-align: left;
 }
 
 /* Skills */
@@ -792,5 +806,9 @@ form > textarea {
 
   .project_description {
     order: 2;
+  }
+
+  .w-20 {
+    display: none;
   }
 }
